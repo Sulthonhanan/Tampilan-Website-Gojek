@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>#PastiAdaJalan – Kampanye Gojek</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gojek-green: #00aa13;
+      --gojek-dark: #202124;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .text-gojek-dark {
+      color: var(--gojek-dark);
+    }
+
+    .bg-gojek-green {
+      background-color: var(--gojek-green);
+    }
+
+    .text-gojek-green {
+      color: var(--gojek-green);
+    }
+
+    .carousel {
+      scroll-snap-type: x mandatory;
+      overflow-x: auto;
+      display: flex;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+
+    .banner-container {
+      aspect-ratio: 3 / 1;
+    }
+
+    @media (max-width: 768px) {
+      .banner-container {
+        aspect-ratio: 2 / 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gojek-dark">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-[#1f1f1f] shadow-sm py-4 px-6">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="Logo_Gojek.png" alt="Gojek Logo" class="h-10" />
+      <span class="font-bold text-xl text-gojek-green">Gojek</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+      <a href="#home" class="hover:text-gojek-green">Beranda</a>
+      <a href="#tentang" class="hover:text-gojek-green">Tentang</a>
+      <a href="#poster" class="hover:text-gojek-green">Poster</a>
+      <a href="#statistik" class="hover:text-gojek-green">Statistik</a>
+      <a href="#testimoni" class="hover:text-gojek-green">Testimoni</a>
+    </nav>
+    </div>
+  </header>
+
+ <!-- Hero -->
+<section id="home" class="px-6 py-20 text-center">
+  <div class="max-w-4xl mx-auto">
+    <img src="Logo_Gojek.png" alt="Logo" class="h-10 mx-auto mb-6" />
+    <h1 class="text-5xl font-extrabold">#PastiAdaJalan</h1>
+    <p class="mt-4 text-xl text-gray-600">Bersama Gojek, selalu ada solusi untuk setiap perjalanan hidupmu</p>
+
+    <div class="mt-10 banner-container rounded-xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+      <img src="Banner Gojek.png" alt="Banner Kampanye" class="w-full h-full object-cover" />
+    </div>
+    <div class="mt-8">
+      <a href="dukungan.html">
+        <button class="bg-gojek-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+          ❤️ Dukung Sekarang
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Tentang -->
+ <section id="tentang" class="px-6 py-20 bg-gray-50 text-center">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Tentang Kampanye</h2>
+    <p class="text-lg text-gray-700">
+      #PastiAdaJalan adalah kampanye Gojek yang menunjukkan bahwa selalu ada solusi untuk setiap tantangan. 
+      Dengan layanan transportasi, pengantaran, dan keuangan, Gojek hadir untuk membantumu mencapai tujuan.
+    </p>
+
+    <!-- Tombol ke Liputan -->
+    <div class="mt-6">
+      <a href="liputan.html">
+        <button class="bg-gojek-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+          📸 Lihat Liputan Kegiatan
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Carousel Poster -->
+<style>
+  .zoom-in-hover {
+    transition: transform 0.4s ease;
+  }
+  .zoom-in-hover:hover {
+    transform: scale(1.09); /* Zoom in sedikit */
+  }
+</style>
+
+<section id="poster" class="px-6 py-16 bg-gray-50">
+  <h2 class="text-3xl font-bold text-center mb-6">Poster Kampanye</h2>
+  <div class="flex justify-center">
+    <div class="carousel px-2 flex space-x-4 overflow-x-auto">
+      <div class="carousel-item w-80 rounded-xl shadow-lg overflow-hidden zoom-in-hover">
+        <img src="postingan 1.jpg" alt="postingan 1" class="w-full h-52 object-cover" />
+      </div>
+      <div class="carousel-item w-80 rounded-xl shadow-lg overflow-hidden zoom-in-hover">
+        <img src="postingan 2.jpg" alt="postingan 2" class="w-full h-52 object-cover" />
+      </div>
+      <div class="carousel-item w-80 rounded-xl shadow-lg overflow-hidden zoom-in-hover">
+        <img src="postingan 3.jpg" alt="postingan 3" class="w-full h-52 object-cover" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Infografis Statistik -->
+  <section id="statistik" class="px-6 py-20 bg-gray-100">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">Statistik Kampanye</h2>
+
+
+        <!-- Gambar Statistik -->
+<div class="flex flex-col items-center justify-center mb-10">
+    <img src="Statistik.png" alt="Infografis Statistik Gojek" class="w-full max-w-sm md:max-w-md rounded-xl shadow-md mb-4">
+    <p class="text-sm text-gray-600 max-w-xl">
+      Infografis ini menunjukkan dampak kampanye #PastiAdaJalan: 
+      lebih dari <strong>10 juta pengguna</strong> per bulan, 
+      <strong>92% UMKM</strong> mengalami peningkatan transaksi, dan 
+      kontribusi <strong>Rp 15 Triliun</strong> ke perekonomian nasional. 
+      Gojek juga membuka peluang bagi Gen Z dan pelaku UMKM.
+    </p>
+  </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gojek-dark text-lg">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-4xl font-bold text-gojek-green">85%</h3>
+        <p class="mt-2">Pengguna merasa lebih terbantu dengan layanan Gojek selama kampanye</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-4xl font-bold text-gojek-green">12.000+</h3>
+        <p class="mt-2">Konten #PastiAdaJalan dibagikan di media sosial</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-4xl font-bold text-gojek-green">60%</h3>
+        <p class="mt-2">Peningkatan pemakaian fitur GoPayLater & GoSend selama kampanye</p>
+      </div>
+    </div>
+
+
+
+
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="px-6 py-20 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Apa Kata Mereka?</h2>
+      <div class="space-y-8">
+        <blockquote class="bg-gray-100 p-6 rounded-xl shadow text-gray-700 italic">“Saya jadi lebih mudah antar anak ke sekolah dan kerja tanpa ribet. Gojek emang #PastiAdaJalan!” – Rina, Jakarta</blockquote>
+        <blockquote class="bg-gray-100 p-6 rounded-xl shadow text-gray-700 italic">“Solusi banget pas tanggal tua. Fitur GoPayLater bantu belanja harian saya!” – Dika, Bandung</blockquote>
+        <blockquote class="bg-gray-100 p-6 rounded-xl shadow text-gray-700 italic">“Pesanan cepat sampai, mitra ramah, aplikasinya mudah. Gojek selalu jadi andalan.” – Maya, Surabaya</blockquote>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="aksi" class="px-6 py-20 text-center bg-gray-50">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Gabung & Ambil Bagian</h2>
+      <p class="text-lg text-gray-700 mb-6">Jadilah bagian dari gerakan ini dan sebarkan semangat bahwa #PastiAdaJalan untuk siapa pun, kapan pun, di mana pun.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="px-6 py-8 bg-gray-100 text-center text-sm text-gray-500">
+    <p>&copy; 2025 Gojek Indonesia. #PastiAdaJalan</p>
+  </footer>
+
+</body>
+</html>
