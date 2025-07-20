@@ -1,0 +1,150 @@
+
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>#PastiAdaJalan – Kampanye Gojek</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gojek-green: #00aa13;
+      --gojek-dark: #202124;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .text-gojek-dark {
+      color: var(--gojek-dark);
+    }
+
+    .bg-gojek-green {
+      background-color: var(--gojek-green);
+    }
+
+    .text-gojek-green {
+      color: var(--gojek-green);
+    }
+
+    .carousel {
+      scroll-snap-type: x mandatory;
+      overflow-x: auto;
+      display: flex;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+
+    .banner-container {
+      aspect-ratio: 3 / 1;
+    }
+
+    @media (max-width: 768px) {
+      .banner-container {
+        aspect-ratio: 2 / 1;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gojek-dark">
+
+
+    <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-[#1f1f1f] shadow-sm py-4 px-6">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <img src="Logo_Gojek.png" alt="Gojek Logo" class="h-10" />
+      <span class="font-bold text-xl text-gojek-green">Gojek</span>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+  <a href="gojek_career_genz-6.html#home" class="hover:text-gojek-green">Beranda</a>
+  <a href="gojek_career_genz-6.html#tentang" class="hover:text-gojek-green">Tentang</a>
+  <a href="gojek_career_genz-6.html#poster" class="hover:text-gojek-green">Poster</a>
+  <a href="gojek_career_genz-6.html#statistik" class="hover:text-gojek-green">Statistik</a>
+  <a href="gojek_career_genz-6.html#testimoni" class="hover:text-gojek-green">Testimoni</a>
+</nav>
+    </div>
+  </header>
+<!-- Liputan Kegiatan -->
+<section id="liputan" class="px-6 py-20 bg-gray-50 text-gray-800">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-extrabold mb-4 text-green-700">Liputan Kegiatan</h2>
+    <p class="text-lg text-gray-600 mb-12">
+      Rangkaian kegiatan nyata dari kampanye <span class="font-semibold text-green-700">#PastiAdaJalan</span> yang berdampak bagi masyarakat.
+    </p>
+
+ 
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Kegiatan 1 -->
+      <div class="rounded-2xl overflow-hidden shadow-xl bg-white hover:scale-[1.02] transition duration-300 ease-in-out flex flex-col items-center text-center">
+        <div class="w-full h-60 bg-gray-200 flex items-center justify-center">
+          <img src="liputan 1.jpeg" alt="Konferensi Pers" class="max-h-full max-w-full object-contain" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Peluncuran Kampanye Nasional</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Kampanye resmi diluncurkan di Jakarta (8 Okt 2023) bersama Kemenparekraf, mitra driver & UMKM perkenalkan solusi hemat Gojek.
+            </p>
+          </div>
+          <a href="https://artemishub.id/blog/gojek-s-pasti-ada-jalan-empowering-indonesia-s-independence?" target="_blank" class="text-green-600 font-semibold text-sm hover:underline">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <!-- Kegiatan 2 -->
+      <div class="rounded-2xl overflow-hidden shadow-xl bg-white hover:scale-[1.02] transition duration-300 ease-in-out flex flex-col items-center text-center">
+        <div class="w-full h-60 bg-gray-200 flex items-center justify-center">
+          <img src="liputan 2.jpg" alt="Infografik Hadiah Jutaan" class="max-h-full max-w-full object-contain" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">#PastiAdaJalan Hadiah Jutaan</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Periode 21 Apr – 13 Jul 2025, pengguna kumpulkan poin untuk undian gadget, emas, dan posisi Gojek Ambassador.
+            </p>
+          </div>
+          <a href="https://www.gojek.com/blog/gojek/pastiadajalan?utm" target="_blank" class="text-green-600 font-semibold text-sm hover:underline">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+      <!-- Kegiatan 3 -->
+      <div class="rounded-2xl overflow-hidden shadow-xl bg-white hover:scale-[1.02] transition duration-300 ease-in-out flex flex-col items-center text-center">
+        <div class="w-full h-60 bg-gray-200 flex items-center justify-center">
+          <img src="liputan 3.jpeg" alt="Pelatihan UMKM" class="max-h-full max-w-full object-contain" />
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Pelatihan Digitalisasi UMKM (KAMUS)</h3>
+            <p class="text-sm text-gray-600 mb-4">
+              Gojek & Kemenkop UKM dukung 100.000+ UMKM lewat pelatihan digital marketing dan layanan online.
+            </p>
+          </div>
+          <a href="https://www.gojek.com/news/targetkan-100000-umkm-bangkitbersama-gojek-dan-kemenkop-ukm-dorong-pelatihan-ribuan-umkm-di-hari-umkm-nasional?" target="_blank" class="text-green-600 font-semibold text-sm hover:underline">Baca Selengkapnya →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="px-6 py-8 bg-gray-100 text-center text-sm text-gray-500">
+    <p>&copy; 2025 Gojek Indonesia. #PastiAdaJalan</p>
+  </footer>
+
+</body>
+</html>
+
